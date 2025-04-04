@@ -34,7 +34,7 @@ root.columnconfigure(0, weight=1)
 main = ttk.Frame(root, padding=(30, 15))
 main.grid()
 
-
+# widgets
 meters_label = ttk.Label(main, text="Meters:")
 meters_input = ttk.Entry(main, width=10, textvariable=meters_value, font=("Segoe UI", 10))
 
@@ -43,7 +43,7 @@ feet_display = ttk.Label(main, textvariable= feet_value)
 
 calc_button = ttk.Button(main, text="Calculate", command=calculate_feet)
 
-
+# grid layout
 meters_label.grid(row=0, column=0, sticky="W")
 meters_input.grid(row=0, column=1, sticky="EW")
 meters_input.focus()
